@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login&signup</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bca19b6e15.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="form-box">
+        <div class="homepage-link">
+            <a href="fitness.php"><i class="fas fa-home"></i></a>
+        </div>
+        <h1 id="title">Sign Up</h1>
+        <form method="POST" action="login.php">
+            <div class="input-group">
+                <div class="input-field" id="namefield">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" name="name" placeholder="Name" id="name">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email" id="email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password" id="password">
+                </div>
+                <div class="input-field">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I accept the terms and conditions</label>
+                </div>
+                <p>Forgot password? <a href="#">Click Here</a></p>
+            </div>
+            <div class="btn-field">
+                <button type="submit" id="signupbtn">Sign up</button>
+                <button type="submit" id="loginbtn">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
